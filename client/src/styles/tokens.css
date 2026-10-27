@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+
+  --paper: #f4eee3;
+  --paper-deep: #e9e0cf;
+  --card: #fffaf2;
+  --ink: #1c1a17;
+  --ink-soft: #5c554b;
+  --ink-faint: #8c8478;
+  --line: #1c1a17;
+  --hairline: rgba(28, 26, 23, 0.14);
+
+  --accent: #d2562c;
+  --accent-hover: #b94721;
+  --on-accent: #fffaf2;
+  --pine: #1e4d45;
+  --pine-soft: #d7e6df;
+  --sun: #f4c64e;
+  --sun-soft: #fbecc0;
+  --danger: #b3261e;
+
+  --ok-bg: #d7e6df;   --ok-fg: #1e4d45;
+  --warn-bg: #fbecc0; --warn-fg: #7a5a00;
+  --bad-bg: #f6d9cf;  --bad-fg: #8f2f14;
+  --mute-bg: #e9e3d8; --mute-fg: #6b645a;
+
+  --font-body: 'Heebo', system-ui, sans-serif;
+  --font-display: 'Frank Ruhl Libre', 'David', serif;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --lift: -4px 4px 0 var(--line);
+  --lift-sm: -2px 2px 0 var(--line);
+  --lift-lg: -7px 7px 0 var(--line);
+  --page-width: 1180px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: #16150f;
+    --paper-deep: #201e17;
+    --card: #222019;
+    --ink: #f1eadc;
+    --ink-soft: #bdb4a4;
+    --ink-faint: #8a8274;
+    --line: #f1eadc;
+    --hairline: rgba(241, 234, 220, 0.14);
+    --accent: #ec7a4f;
+    --accent-hover: #f29371;
+    --on-accent: #16150f;
+    --pine: #7cc3b2;
+    --pine-soft: #1e3a34;
+    --sun: #f4c64e;
+    --sun-soft: #4a3d14;
+    --ok-bg: #1e3a34;   --ok-fg: #9ad8c6;
+    --warn-bg: #4a3d14; --warn-fg: #f4d27a;
+    --bad-bg: #4b2418;  --bad-fg: #f5a98c;
+    --mute-bg: #2c2a22; --mute-fg: #b0a898;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #16150f;
+  --paper-deep: #201e17;
+  --card: #222019;
+  --ink: #f1eadc;
+  --ink-soft: #bdb4a4;
+  --ink-faint: #8a8274;
+  --line: #f1eadc;
+  --hairline: rgba(241, 234, 220, 0.14);
+  --accent: #ec7a4f;
+  --accent-hover: #f29371;
+  --on-accent: #16150f;
+  --pine: #7cc3b2;
+  --pine-soft: #1e3a34;
+  --sun: #f4c64e;
+  --sun-soft: #4a3d14;
+  --ok-bg: #1e3a34;   --ok-fg: #9ad8c6;
+  --warn-bg: #4a3d14; --warn-fg: #f4d27a;
+  --bad-bg: #4b2418;  --bad-fg: #f5a98c;
+  --mute-bg: #2c2a22; --mute-fg: #b0a898;
+}

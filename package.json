@@ -1,0 +1,16 @@
+{
+  "name": "mentora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private tutoring marketplace: search tutors, book open slots, real-time chat.",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm ci --prefix server && npm ci --prefix client --include=dev && npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
